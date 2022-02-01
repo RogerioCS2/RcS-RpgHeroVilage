@@ -1,7 +1,10 @@
 {
   "resources": [
+    {"id":{"name":"sprPlayer","path":"sprites/sprPlayer/sprPlayer.yy",},"order":0,},
     {"id":{"name":"sndMusicaBatalha","path":"sounds/sndMusicaBatalha/sndMusicaBatalha.yy",},"order":1,},
+    {"id":{"name":"tlVilaVerde","path":"tilesets/tlVilaVerde/tlVilaVerde.yy",},"order":0,},
     {"id":{"name":"VilaVerde","path":"rooms/VilaVerde/VilaVerde.yy",},"order":0,},
+    {"id":{"name":"sprVilaVerde","path":"sprites/sprVilaVerde/sprVilaVerde.yy",},"order":0,},
     {"id":{"name":"antComandosGit","path":"notes/antComandosGit/antComandosGit.yy",},"order":1,},
     {"id":{"name":"sprLuva","path":"sprites/sprLuva/sprLuva.yy",},"order":0,},
     {"id":{"name":"CaminhoDanoso","path":"rooms/CaminhoDanoso/CaminhoDanoso.yy",},"order":1,},
