@@ -7,4 +7,4 @@ if(keyboard_check_pressed(ord("A"))){
 posicaoAtualX = x;
 posicaoAtualY = y;
 
-Movimento();
+Update();

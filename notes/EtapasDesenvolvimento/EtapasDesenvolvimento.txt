@@ -1,0 +1,21 @@
+Passos para desenvolvimento do jogo
+1 - Criado a cena da vila verde
+2 - Criado a cena do Caminho Danoso
+3 - Criado a cena da batalha do Caminho Danoso
+
+4 - Criar maquina de estados
+	Criar um objeto para a maquina de estados e colocar na cena
+	Adicionar um evento create na objeto maquina de estados
+	Criar um enum com os estados gerais para o jogo
+	
+5 - Criando o movimento do Player
+	Criar um objeto para colisão com elementos do cenario
+	Criar um script para o player	
+	Criar uma função de update e verificação de estado do jogo	 
+	Criar uma função de movimento no script do player
+	Criar uma função de colisão no script do player
+
+6 - Criando a transição de roons
+	
+
+7 - Criando o inicio da Batalha
