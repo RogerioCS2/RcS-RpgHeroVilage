@@ -54,10 +54,11 @@ function AtaqueCoporalNoInimigo(){
 }
 
 function Update(){
-	if(objMaquinaEstados.estado = Estado.batalha){
+	if(objMaquinaEstados.estado == Estado.batalha){
 		AtaqueCoporalNoInimigo();
 	}
-	if(objMaquinaEstados.estado = Estado.normal){
+	var podeMovimentar = (objMaquinaEstados.estado == Estado.normal && objMaquinaEstados.estado != Estado.transicao) 
+	if(podeMovimentar){
 		//show_debug_message("Game Normal");	
 		//speed = 0;
 		PlayerMovimento();		

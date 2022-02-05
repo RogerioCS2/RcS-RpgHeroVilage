@@ -1,21 +1,28 @@
 Passos para desenvolvimento do jogo
-1 - Criado a cena da vila verde
-2 - Criado a cena do Caminho Danoso
-3 - Criado a cena da batalha do Caminho Danoso
+1 - Criado a cena da vila verde;
+2 - Criado a cena do Caminho Danoso;
+3 - Criado a cena da batalha do Caminho Danoso;
 
-4 - Criar maquina de estados
-	Criar um objeto para a maquina de estados e colocar na cena
-	Adicionar um evento create na objeto maquina de estados
-	Criar um enum com os estados gerais para o jogo
+4 - Criar maquina de estados;
+	Criar um objeto para a maquina de estados e colocar na cena;
+	Adicionar um evento create no objeto maquina de estados;
+	Criar um enum com os estados gerais para o jogo;
 	
-5 - Criando o movimento do Player
-	Criar um objeto para colisão com elementos do cenario
-	Criar um script para o player	
-	Criar uma função de update e verificação de estado do jogo	 
-	Criar uma função de movimento no script do player
-	Criar uma função de colisão no script do player
+5 - Criando o movimento do Player;
+	Criar um objeto para colisão com elementos do cenario;
+	Criar um script para o player;	
+	Criar uma função de update e verificação de estado do jogo;	 
+	Criar uma função de movimento no script do player;
+	Criar uma função de colisão no script do player;
+	Colocar a camera para perseguir o player;
 
 6 - Criando a transição de roons
-	
+	Criar um objeto colisor para a área de transferencia em ambas as cenas de transição;
+	Criar um objeto para controlar detalhes da transicao;
+	Definir a cena de destino e posição x e y no creation code do colisor de transferencia criado;
+	Abrir o objeto colisor para troca de tela e adcionar um evento create e um step event;
+	Criar uma função pra ideficar a colisão com o player e instanciar o objeto de controle de transicao;
+	Cria um evento de room start para reiniciar a transição do colisor de transicao;
+	No objeto para controle de tranferencia criar um evento create e um evento drawnGui;	
 
 7 - Criando o inicio da Batalha

@@ -1,3 +1,3 @@
 cenaDestino = VilaVerde;
-posicaoXCenaDestino = 349;
-posicaoYCenaDestino = 349;
+posicaoXCenaDestino = 1112;
+posicaoYCenaDestino = 150;

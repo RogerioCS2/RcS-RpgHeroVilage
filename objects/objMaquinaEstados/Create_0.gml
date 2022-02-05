@@ -2,7 +2,8 @@
 estado = 0;
 enum Estado{
 	normal,
-	batalha
+	batalha,
+	transicao
 }
 
 estado = Estado.normal;
