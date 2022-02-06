@@ -1,7 +1,9 @@
 {
   "resources": [
-    {"id":{"name":"sprPlayerBase","path":"sprites/sprPlayerBase/sprPlayerBase.yy",},"order":0,},
+    {"id":{"name":"sprParadoBaixo","path":"sprites/sprParadoBaixo/sprParadoBaixo.yy",},"order":0,},
     {"id":{"name":"objFumacaChamine","path":"objects/objFumacaChamine/objFumacaChamine.yy",},"order":3,},
+    {"id":{"name":"sprAndandoEsquerda","path":"sprites/sprAndandoEsquerda/sprAndandoEsquerda.yy",},"order":2,},
+    {"id":{"name":"sprAndandoBaixo","path":"sprites/sprAndandoBaixo/sprAndandoBaixo.yy",},"order":3,},
     {"id":{"name":"sprInimigoBase","path":"sprites/sprInimigoBase/sprInimigoBase.yy",},"order":0,},
     {"id":{"name":"objPlayer","path":"objects/objPlayer/objPlayer.yy",},"order":0,},
     {"id":{"name":"sprColisorCenario","path":"sprites/sprColisorCenario/sprColisorCenario.yy",},"order":0,},
@@ -25,6 +27,8 @@
     {"id":{"name":"Player","path":"scripts/Player/Player.yy",},"order":0,},
     {"id":{"name":"btCaminhoDanoso","path":"rooms/btCaminhoDanoso/btCaminhoDanoso.yy",},"order":2,},
     {"id":{"name":"sndMusicaGeral","path":"sounds/sndMusicaGeral/sndMusicaGeral.yy",},"order":0,},
+    {"id":{"name":"sprAndandoDireita","path":"sprites/sprAndandoDireita/sprAndandoDireita.yy",},"order":1,},
+    {"id":{"name":"sprColisorPlayer","path":"sprites/sprColisorPlayer/sprColisorPlayer.yy",},"order":4,},
     {"id":{"name":"sprFumacaChamine","path":"sprites/sprFumacaChamine/sprFumacaChamine.yy",},"order":2,},
     {"id":{"name":"FuncoesApoio","path":"scripts/FuncoesApoio/FuncoesApoio.yy",},"order":1,},
     {"id":{"name":"antFuncoesUteis","path":"notes/antFuncoesUteis/antFuncoesUteis.yy",},"order":2,},

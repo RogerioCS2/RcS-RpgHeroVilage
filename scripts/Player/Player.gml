@@ -15,6 +15,24 @@ function PlayerColisao(){
 	}	
 }
 
+function PlayerControleAnimacao(){
+	if(velocidadeHorizontal == 0 && velocidadeVertical == 0){
+		sprite_index = sprParadoBaixo;		
+		//image_speed = 0;
+		//image_index = 1;
+	}
+	
+	if(velocidadeHorizontal > 0 ){
+		sprite_index = sprAndandoEsquerda;			
+	} else if(velocidadeHorizontal < 0){		
+		sprite_index =sprAndandoDireita;
+	} else if(velocidadeVertical > 0){		
+		sprite_index = sprAndandoBaixo;
+	} else if(velocidadeVertical < 0){
+		sprite_index = sprAndandoBaixo;
+	}
+}
+
 function PlayerMovimento(){
 	cima = keyboard_check(vk_up);
 	baixo = keyboard_check(vk_down);
@@ -23,13 +41,11 @@ function PlayerMovimento(){
 	
 	velocidadeHorizontal = (direita - esquerda) * velocidade;
 	velocidadeVertical = (baixo - cima) * velocidade;	
-	
 	PlayerColisao();
 	
 	x += velocidadeHorizontal;
 	y += velocidadeVertical;
-	
-	
+	PlayerControleAnimacao();
 }
 
 function AtaqueCoporalNoInimigo(){

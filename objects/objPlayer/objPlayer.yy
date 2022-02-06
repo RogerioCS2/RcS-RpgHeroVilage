@@ -1,11 +1,14 @@
 {
   "spriteId": {
-    "name": "sprPlayerBase",
-    "path": "sprites/sprPlayerBase/sprPlayerBase.yy",
+    "name": "sprParadoBaixo",
+    "path": "sprites/sprParadoBaixo/sprParadoBaixo.yy",
   },
   "solid": false,
   "visible": true,
-  "spriteMaskId": null,
+  "spriteMaskId": {
+    "name": "sprColisorPlayer",
+    "path": "sprites/sprColisorPlayer/sprColisorPlayer.yy",
+  },
   "persistent": false,
   "parentObjectId": null,
   "physicsObject": false,
