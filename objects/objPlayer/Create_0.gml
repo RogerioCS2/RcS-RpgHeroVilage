@@ -10,3 +10,9 @@ atacou = false;
 posicaoAtualX = 0;
 posicaoAtualY = 0;
 cicloConcluido = false;
+
+function DadosNovaTela(){
+	room_goto(other.cenaDestino);
+	x = other.posicaoXNovaCena;
+	y = other.posicaoYNovaCena;
+}

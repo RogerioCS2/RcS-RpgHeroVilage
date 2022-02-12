@@ -29,7 +29,7 @@ function PlayerControleAnimacao(){
 	} else if(velocidadeVertical > 0){		
 		sprite_index = sprAndandoBaixo;
 	} else if(velocidadeVertical < 0){
-		sprite_index = sprAndandoBaixo;
+		sprite_index = sprAndandoCima;
 	}
 }
 
