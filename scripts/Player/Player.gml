@@ -31,6 +31,9 @@ function PlayerControleAnimacao(){
 	} else if(velocidadeVertical < 0){
 		sprite_index = sprAndandoCima;
 	}
+	if(objMaquinaEstados.estado == Estado.batalha){
+		sprite_index = sprParadoBaixo;
+	}
 }
 
 function PlayerMovimento(){
@@ -45,38 +48,41 @@ function PlayerMovimento(){
 	
 	x += velocidadeHorizontal;
 	y += velocidadeVertical;
-	PlayerControleAnimacao();
+	PlayerControleAnimacao();		
 }
 
 function AtaqueCoporalNoInimigo(){
-	//show_debug_message("Game Batalha");	
-	direction = point_direction(x, y, objInimigoBase.x, objInimigoBase.y);	
-	speed = 3;
-	if(distance_to_object(objInimigoBase) <= 2){
-		speed = 0;
-		atacou = true			
+	if(object_exists(objInimigoBase)){
+		//show_debug_message("Game Batalha");	
+		direction = point_direction(x, y, objInimigoBase.x, objInimigoBase.y);	
+		speed = 3;
+		if(distance_to_object(objInimigoBase) <= 2){
+			speed = 0;
+			atacou = true			
+		}
+		if(atacou){
+			direction = point_direction(x, y, posicaoInicialX,posicaoInicialY);
+			speed = 3;			
+		}
+		show_debug_message(posicaoAtualX);
+		if(posicaoInicialX >= posicaoAtualX && atacou){
+			//show_debug_message("Game Normal");
+			speed = 0;
+			atacou = false;
+			objMaquinaEstados.estado = Estado.normal;
+		}	
 	}
-	if(atacou){
-		direction = point_direction(x, y, posicaoInicialX,posicaoInicialY);
-		speed = 3;			
-	}
-	show_debug_message(posicaoAtualX);
-	if(posicaoInicialX >= posicaoAtualX && atacou){
-		//show_debug_message("Game Normal");
-		speed = 0;
-		atacou = false;
-		objMaquinaEstados.estado = Estado.normal;
-	}	
 }
 
 function Update(){
 	if(objMaquinaEstados.estado == Estado.batalha){
-		AtaqueCoporalNoInimigo();
+		//AtaqueCoporalNoInimigo();
 	}
-	var podeMovimentar = (objMaquinaEstados.estado == Estado.normal && objMaquinaEstados.estado != Estado.transicao) 
+	var podeMovimentar = (objMaquinaEstados.estado == Estado.normal && objMaquinaEstados.estado != Estado.batalha) 
 	if(podeMovimentar){
 		//show_debug_message("Game Normal");	
 		//speed = 0;
 		PlayerMovimento();		
 	}
 }
+

@@ -1,12 +1,8 @@
 /// @description Update
 
-if(keyboard_check_pressed(ord("A"))){
-	objMaquinaEstados.estado = Estado.batalha;		
-}
-
 posicaoAtualX = x;
 posicaoAtualY = y;
+roomDeOrigem = room;
 
 Update();
-
-show_debug_message("Posicao X: " + string(x) + " Posicao Y " + string(y));
+VerificandoMovimento();
