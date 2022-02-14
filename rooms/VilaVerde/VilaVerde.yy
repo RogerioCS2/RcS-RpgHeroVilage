@@ -171,8 +171,8 @@
     "PhysicsWorldPixToMetres": 0.1,
   },
   "parent": {
-    "name": "Extensions",
-    "path": "folders/Cenas/Extensions.yy",
+    "name": "Cenas",
+    "path": "folders/Cenas.yy",
   },
   "resourceVersion": "1.0",
   "name": "VilaVerde",

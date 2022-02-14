@@ -6,7 +6,7 @@ global.intervaloBatalha = 1000;
 global.pontoAtual = 0;
 
 cenaDestino = btCaminhoDanoso;
-posicaoXNovaCena = 230;
+posicaoXNovaCena = 300;
 posicaoYNovaCena = 350;	
 
 roomDeOrigem = 0;

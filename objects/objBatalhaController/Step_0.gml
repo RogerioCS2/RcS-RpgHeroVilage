@@ -8,8 +8,9 @@ if(room_get_name(room) != "VilaVerde"){
 	}
 	
 	if(!global.emBatalha){						
-		global.pontoAtual = irandom(global.intervaloBatalha);		
-		if(global.pontoAtual == global.intervaloBatalha){
+		global.pontoAtual = irandom(global.intervaloBatalha);
+		var iniciaBatalha = (global.pontoAtual == global.intervaloBatalha) && (global.intervaloBatalha <= 800);
+		if(iniciaBatalha){
 			global.emBatalha = true;
 			global.intervaloBatalha = 1000;
 			objMaquinaEstados.estado = Estado.batalha;			
