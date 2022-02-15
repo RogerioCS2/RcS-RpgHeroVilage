@@ -1,5 +1,14 @@
 /// @description Update
 
+
+/*
+fimBatalha = keyboard_check(ord("A"));
+if(fimBatalha){	
+	room_goto(VilaVerde);		
+} 
+*/
+
+/*
 if(room_get_name(room) != "VilaVerde"){		
 	if(!global.emBatalha){
 		roomDeOrigem = room;
@@ -19,15 +28,19 @@ if(room_get_name(room) != "VilaVerde"){
 			objPlayer.y = posicaoYNovaCena;			
 		}
 	}
+	
+	fimBatalha = keyboard_check(vk_space);
+	if(fimBatalha){	
+		room_goto(roomDeOrigem);
+		objPlayer.x = posicaoXOrigem;
+		objPlayer.y = posicaoYOrigem;
+		global.emBatalha = false;
+		objMaquinaEstados.estado = Estado.normal;	
+	}
 }
+*/
 
-fimBatalha = keyboard_check(vk_space);
 
-if(fimBatalha){	
-	room_goto(roomDeOrigem);
-	objPlayer.x = posicaoXOrigem;
-	objPlayer.y = posicaoYOrigem;
-	global.emBatalha = false;
-	objMaquinaEstados.estado = Estado.normal;	
-}
+
+
 

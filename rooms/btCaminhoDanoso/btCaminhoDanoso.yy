@@ -13,7 +13,10 @@
     {"inherit":false,"visible":false,"xview":0,"yview":0,"wview":1366,"hview":768,"xport":0,"yport":0,"wport":1366,"hport":768,"hborder":32,"vborder":32,"hspeed":-1,"vspeed":-1,"objectId":null,},
   ],
   "layers": [
-    {"instances":[],"visible":true,"depth":0,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"Player","tags":[],"resourceType":"GMRInstanceLayer",},
+    {"instances":[
+        {"properties":[],"isDnd":false,"objectId":{"name":"objControladorBatalha","path":"objects/objControladorBatalha/objControladorBatalha.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":384.0,"y":288.0,"resourceVersion":"1.0","name":"inst_5A97C443","tags":[],"resourceType":"GMRInstance",},
+        {"properties":[],"isDnd":false,"objectId":{"name":"ojbInstanciadorBatalha","path":"objects/ojbInstanciadorBatalha/ojbInstanciadorBatalha.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":416.0,"y":288.0,"resourceVersion":"1.0","name":"inst_3ACCA271","tags":[],"resourceType":"GMRInstance",},
+      ],"visible":true,"depth":0,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"Player","tags":[],"resourceType":"GMRInstanceLayer",},
     {"tilesetId":{"name":"tlCaminhoDanoso","path":"tilesets/tlCaminhoDanoso/tlCaminhoDanoso.yy",},"x":0,"y":0,"tiles":{"SerialiseWidth":40,"SerialiseHeight":24,"TileSerialiseData":[
 180,181,182,183,212,213,214,215,165,166,167,2147483648,2147483648,212,213,214,215,180,181,182,183,2147483648,196,197,198,199,2147483648,2147483648,2147483648,212,213,214,215,2147483648,180,181,182,183,2147483648,2147483648,
 196,197,198,199,2147483648,2147483648,2147483648,180,181,182,183,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,196,197,198,199,2147483648,212,213,214,215,164,165,166,167,2147483648,2147483648,2147483648,2147483648,196,197,198,199,2147483648,2147483648,
@@ -96,7 +99,10 @@
   "inheritLayers": false,
   "creationCodeFile": "${project_dir}/rooms/btCaminhoDanoso/RoomCreationCode.gml",
   "inheritCode": false,
-  "instanceCreationOrder": [],
+  "instanceCreationOrder": [
+    {"name":"inst_5A97C443","path":"rooms/btCaminhoDanoso/btCaminhoDanoso.yy",},
+    {"name":"inst_3ACCA271","path":"rooms/btCaminhoDanoso/btCaminhoDanoso.yy",},
+  ],
   "inheritCreationOrder": false,
   "sequenceId": null,
   "roomSettings": {

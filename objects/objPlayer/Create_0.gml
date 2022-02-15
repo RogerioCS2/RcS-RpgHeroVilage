@@ -13,6 +13,7 @@ cicloConcluido = false;
 
 roomDeOrigem = 0;
 
+
 function DadosNovaTela(){
 	room_goto(other.cenaDestino);
 	x = other.posicaoXNovaCena;
@@ -26,4 +27,28 @@ function VerificandoMovimento(){
 			global.intervaloBatalha -= 1;		
 		}
 	}	
+}
+
+function ControlePosicao(){
+	if(room != btCaminhoDanoso){
+		posicaoAtualX = x;
+		posicaoAtualY = y;
+		roomDeOrigem = room;
+	}
+	
+	fimBatalha = keyboard_check(ord("A"));
+	if(fimBatalha){
+		objMaquinaEstados.estado = Estado.batalha;
+		room_goto(btCaminhoDanoso);
+		x = -20;
+		y = -20;
+	} 
+
+	fimBatalha = keyboard_check(ord("S"));
+	if(fimBatalha){
+		objMaquinaEstados.estado = Estado.normal;
+		room_goto(roomDeOrigem);
+		x = posicaoAtualX;
+		y = posicaoAtualY;
+	} 
 }
