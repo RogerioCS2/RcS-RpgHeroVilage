@@ -1,8 +1,5 @@
 {
-  "spriteId": {
-    "name": "sprPlayerBatalha",
-    "path": "sprites/sprPlayerBatalha/sprPlayerBatalha.yy",
-  },
+  "spriteId": null,
   "solid": false,
   "visible": true,
   "spriteMaskId": null,
@@ -27,11 +24,11 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Player",
-    "path": "folders/Objetos/Player.yy",
+    "name": "Controladores",
+    "path": "folders/Objetos/Controladores.yy",
   },
   "resourceVersion": "1.0",
-  "name": "objPlayerBatalha",
+  "name": "objBattleSpawner",
   "tags": [],
   "resourceType": "GMObject",
 }
