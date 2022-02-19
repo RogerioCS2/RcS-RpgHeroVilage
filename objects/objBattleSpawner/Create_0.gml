@@ -1,5 +1,7 @@
 /// @description Variaveis e Funções
-state = "INIT"
+dsHeroes = 0;
+state = "INIT";
+
 maxMonstersGroups = 3;
 maxMonstersPerGroups = 5;
 

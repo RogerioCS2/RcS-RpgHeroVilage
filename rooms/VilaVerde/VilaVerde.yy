@@ -38,7 +38,6 @@
         {"properties":[],"isDnd":false,"objectId":{"name":"objColisorCenario","path":"objects/objColisorCenario/objColisorCenario.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":3.390625,"scaleY":2.234375,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":941.5,"y":696.5,"resourceVersion":"1.0","name":"inst_615C5719","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"objColisorCenario","path":"objects/objColisorCenario/objColisorCenario.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":2.9375,"scaleY":2.234375,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":1283.0,"y":696.5,"resourceVersion":"1.0","name":"inst_2220A38A","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"objColisorCenario","path":"objects/objColisorCenario/objColisorCenario.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":-0.1297215,"scaleX":0.920744061,"scaleY":1.453125,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":29.5690136,"y":268.505768,"resourceVersion":"1.0","name":"inst_7710ADC3","tags":[],"resourceType":"GMRInstance",},
-        {"properties":[],"isDnd":false,"objectId":{"name":"objIniciadorBatalha","path":"objects/objIniciadorBatalha/objIniciadorBatalha.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":416.0,"y":416.0,"resourceVersion":"1.0","name":"inst_5C4E7619","tags":[],"resourceType":"GMRInstance",},
       ],"visible":true,"depth":100,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"Player","tags":[],"resourceType":"GMRInstanceLayer",},
     {"tilesetId":{"name":"tlVilaVerde","path":"tilesets/tlVilaVerde/tlVilaVerde.yy",},"x":0,"y":0,"tiles":{"SerialiseWidth":43,"SerialiseHeight":24,"TileSerialiseData":[
 2147483648,2147483648,2147483648,2147483648,2147483648,164,165,166,167,2147483648,2147483648,2147483648,2147483648,164,165,166,167,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,172,173,174,175,172,173,174,175,2147483648,2147483648,2147483648,2147483648,2147483648,164,165,166,167,2147483648,
@@ -145,7 +144,6 @@
     {"name":"inst_6DE735EE","path":"rooms/VilaVerde/VilaVerde.yy",},
     {"name":"inst_379874D0","path":"rooms/VilaVerde/VilaVerde.yy",},
     {"name":"inst_4FF40173","path":"rooms/VilaVerde/VilaVerde.yy",},
-    {"name":"inst_5C4E7619","path":"rooms/VilaVerde/VilaVerde.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,
