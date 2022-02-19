@@ -25,7 +25,18 @@ if(state = "INIT"){
 	}
 	playerTurn = true;
 	actionState = "INIT";
-	dsHeroes = -1;
+	attackTimer = 0;
+	timeTillMonstersAttack = 60;
+	
+	if(ds_exists(dsHeroes, ds_type_list)){
+		ds_list_destroy(dsHeroes);
+		dsHeroes = -1;	
+	}
+
+	if(ds_exists(dsMonsters, ds_type_list)){
+		ds_list_destroy(dsMonsters);
+		dsMonsters = -1;	
+	}
 	state = "READY";
 }
 
@@ -42,6 +53,7 @@ if(state == "READY"){
 					ds_list_add(other.dsHeroes, id);
 				}				
 			}
+			ds_list_sort(dsHeroes, true);
 			actionState = "READY";
 		}
 		
@@ -54,9 +66,43 @@ if(state == "READY"){
 			}			
 			
 			if(ds_list_size(dsHeroes) <= 0){
-				actionState = "INIT";				
+				actionState = "INIT";
+				playerTurn = false;
 			}			
 		}		
+	}
+	if(!playerTurn){
+		if(actionState == "INIT"){
+			if(ds_exists(dsMonsters, ds_type_list)){
+				ds_list_destroy(dsMonsters);
+				dsMonsters = -1;
+			}
+			
+			dsMonsters = ds_list_create();
+			
+			with(objMonsterGroup){
+				if(number > 0){
+					ds_list_add(other.dsMonsters, id);
+				}				
+			}
+			
+			ds_list_sort(dsMonsters, true);
+			actionState = "READY"
+		}
+		if(actionState == "READY"){
+			attackTimer++;			
+			if(attackTimer >= timeTillMonstersAttack){
+				activeMonster = ds_list_find_value(dsMonsters, 0);
+				ds_list_delete(dsMonsters, 0);
+				activeMonster.attack = true;
+				attackTimer = 0;				
+			}
+			
+			if(ds_list_size(dsMonsters) <= 0){
+				actionState = "INIT";
+				playerTurn = true;
+			}
+		}
 	}
 }
 

@@ -7,7 +7,7 @@ if(state == "INIT"){
 if(state == "READY"){
 	show_debug_message("Atacando: " + string(attack)) 
 	if(attack){
-		if(x == starX) x -= (sprite_width * 3);
+		if(x == starX){ x -= (sprite_width * 3);}
 		attackAnimationTimer++;
 		if(attackAnimationTimer >= timeTillAttackAnimationEnds){
 			x = starX;
