@@ -3,6 +3,7 @@
     {"id":{"name":"sprParadoBaixo","path":"sprites/sprParadoBaixo/sprParadoBaixo.yy",},"order":0,},
     {"id":{"name":"objFumacaChamine","path":"objects/objFumacaChamine/objFumacaChamine.yy",},"order":1,},
     {"id":{"name":"objMain","path":"objects/objMain/objMain.yy",},"order":2,},
+    {"id":{"name":"fntMenu","path":"fonts/fntMenu/fntMenu.yy",},"order":0,},
     {"id":{"name":"sprAndandoEsquerda","path":"sprites/sprAndandoEsquerda/sprAndandoEsquerda.yy",},"order":2,},
     {"id":{"name":"sprMonsters","path":"sprites/sprMonsters/sprMonsters.yy",},"order":1,},
     {"id":{"name":"sprAndandoBaixo","path":"sprites/sprAndandoBaixo/sprAndandoBaixo.yy",},"order":3,},

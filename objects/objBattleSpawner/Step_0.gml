@@ -27,6 +27,8 @@ if(state = "INIT"){
 	actionState = "INIT";
 	attackTimer = 0;
 	timeTillMonstersAttack = 60;
+	menuState = "MAIN";
+	menuSelected = 0;
 	
 	if(ds_exists(dsHeroes, ds_type_list)){
 		ds_list_destroy(dsHeroes);
@@ -54,12 +56,38 @@ if(state == "READY"){
 				}				
 			}
 			ds_list_sort(dsHeroes, true);
+			
+			menuState = "MAIN";
+			menuSelected = 0;
+			
 			actionState = "READY";
+			
 		}
 		
-		if(actionState == "READY"){			
-			if(keyboard_check_pressed(vk_space)){
-				show_debug_message("Acionei o Espaço")
+		show_debug_message("actionState: " + string(actionState) + " menuSelected: " + string(menuSelected));
+		
+		if(actionState == "READY"){	
+			if(menuState == "MAIN"){
+				if(keyboard_check_pressed(vk_up)){
+					show_debug_message("Apertei a tecla cima");
+					if((menuSelected - 1) >= 0){
+						menuSelected--;
+					}else{
+						menuSelected = (array_length_1d(aMenu) -1);						
+					}						
+				}
+				
+				if(keyboard_check_pressed(vk_down)){
+					show_debug_message("Apertei a tecla baixo");
+					if((menuSelected + 1) < array_length_1d(aMenu)){
+						menuSelected++;
+					}else{
+						menuSelected = 0;						
+					}						
+				}	
+			}
+			
+			if(keyboard_check_pressed(vk_space)){				
 				heroCommand = ds_list_find_value(dsHeroes, 0);
 				ds_list_delete(dsHeroes, 0);	
 				heroCommand.attack = true;
@@ -86,7 +114,7 @@ if(state == "READY"){
 				}				
 			}
 			
-			ds_list_sort(dsMonsters, true);
+			ds_list_sort(dsMonsters, true);			
 			actionState = "READY"
 		}
 		if(actionState == "READY"){

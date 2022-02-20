@@ -15,3 +15,10 @@ aMonstersPos[1, 1] = (aMonstersPos[0, 1]) - (sprite_get_height(sprInimigos) + 20
 
 aMonstersPos[2, 0] = 80;
 aMonstersPos[2, 1] = (aMonstersPos[0, 1]) + (sprite_get_height(sprInimigos) + 20);
+
+aMenu[0] = "ATK";
+aMenu[1] = "MGK";
+aMenu[2] = "ITM";
+aMenu[3] = "DEF";
+aMenu[4] = "RUN";
+
